@@ -166,6 +166,10 @@ an eCert and key material into a newly created folder - ``hfc-key-store`` - at t
 root of this project.  Our apps will then look to this location when they need to
 create or load the identity objects for our various users.
 
+.. note:: If you are using Docker Toolbox, you will need to edit enrollAdmin.js,
+registerUser.js, query.js and invoke.js, replacing all instances of `localhost`
+with the IP created by Docker. Keep the ports the same (e.g., `:7501` in query.js).
+
 Register and Enroll ``user1``
 -----------------------------
 
